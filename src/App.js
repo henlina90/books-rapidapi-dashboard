@@ -4,6 +4,8 @@ import "./App.css";
 import Home from "./components/Home";
 import Search from "./components/Search";
 import NavList from "./components/NavList";
+import AwardedBooks from "./components/AwardedBooks";
+import NominatedBooks from "./components/NominatedBooks";
 
 import Box from "@mui/material/Box";
 import CssBaseline from "@mui/material/CssBaseline";
@@ -84,6 +86,8 @@ function App(props) {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="search" element={<Search />} />
+          <Route path="awarded-books" element={<AwardedBooks />} />
+          <Route path="nominated/:genre" element={<NominatedBooks />} />
         </Routes>
       </Box>
     </Box>
